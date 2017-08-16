@@ -1,0 +1,48 @@
+[36m01 08 2017 18:28:29.704:DEBUG [config]: [39mLoading config C:\WOOZA_BR\WZ.Insurance\Genial(Front)\tests\karma.conf.js
+[36m01 08 2017 18:28:29.721:DEBUG [config]: [39mautoWatch set to false, because of singleRun
+[36m01 08 2017 18:28:29.722:DEBUG [plugin]: [39mLoading plugin karma-chrome-launcher.
+[31m01 08 2017 18:28:29.724:ERROR [plugin]: [39mCannot find plugin "karma-chrome-launcher".
+  Did you forget to install it?
+  npm install karma-chrome-launcher --save-dev
+[36m01 08 2017 18:28:29.724:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-chrome-launcher
+[36m01 08 2017 18:28:29.725:DEBUG [plugin]: [39mLoading plugin karma-phantomjs-launcher.
+[31m01 08 2017 18:28:29.726:ERROR [plugin]: [39mCannot find plugin "karma-phantomjs-launcher".
+  Did you forget to install it?
+  npm install karma-phantomjs-launcher --save-dev
+[36m01 08 2017 18:28:29.728:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-phantomjs-launcher
+[36m01 08 2017 18:28:29.728:DEBUG [plugin]: [39mLoading plugin karma-spec-reporter.
+[31m01 08 2017 18:28:29.729:ERROR [plugin]: [39mCannot find plugin "karma-spec-reporter".
+  Did you forget to install it?
+  npm install karma-spec-reporter --save-dev
+[36m01 08 2017 18:28:29.729:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-spec-reporter
+[36m01 08 2017 18:28:29.729:DEBUG [plugin]: [39mLoading plugin karma-coverage.
+[31m01 08 2017 18:28:29.731:ERROR [plugin]: [39mCannot find plugin "karma-coverage".
+  Did you forget to install it?
+  npm install karma-coverage --save-dev
+[36m01 08 2017 18:28:29.731:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-coverage
+[36m01 08 2017 18:28:29.731:DEBUG [plugin]: [39mLoading plugin karma-jasmine.
+[31m01 08 2017 18:28:29.732:ERROR [plugin]: [39mCannot find plugin "karma-jasmine".
+  Did you forget to install it?
+  npm install karma-jasmine --save-dev
+[36m01 08 2017 18:28:29.733:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-jasmine
+[36m01 08 2017 18:28:29.733:DEBUG [plugin]: [39mLoading plugin karma-threshold-reporter.
+[31m01 08 2017 18:28:29.734:ERROR [plugin]: [39mCannot find plugin "karma-threshold-reporter".
+  Did you forget to install it?
+  npm install karma-threshold-reporter --save-dev
+[36m01 08 2017 18:28:29.735:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-threshold-reporter
+[36m01 08 2017 18:28:29.735:DEBUG [plugin]: [39mLoading plugin karma-babel-preprocessor.
+[31m01 08 2017 18:28:29.736:ERROR [plugin]: [39mCannot find plugin "karma-babel-preprocessor".
+  Did you forget to install it?
+  npm install karma-babel-preprocessor --save-dev
+[36m01 08 2017 18:28:29.736:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-babel-preprocessor
+[36m01 08 2017 18:28:29.736:DEBUG [plugin]: [39mLoading plugin karma-junit-reporter.
+[31m01 08 2017 18:28:29.737:ERROR [plugin]: [39mCannot find plugin "karma-junit-reporter".
+  Did you forget to install it?
+  npm install karma-junit-reporter --save-dev
+[36m01 08 2017 18:28:29.737:DEBUG [karma]: [39mRegistered a load error of type plug_in with name karma-junit-reporter
+[31m01 08 2017 18:28:29.741:ERROR [preprocess]: [39mCan not load "babel", it is not registered!
+  Perhaps you are missing some plugin?
+[36m01 08 2017 18:28:29.741:DEBUG [karma]: [39mRegistered a load error of type preprocessor with name babel
+[31m01 08 2017 18:28:29.741:ERROR [preprocess]: [39mCan not load "coverage", it is not registered!
+  Perhaps you are missing some plugin?
+[36m01 08 2017 18:28:29.741:DEBUG [karma]: [39mRegistered a load error of type preprocessor with name coverage

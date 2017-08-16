@@ -1,0 +1,62 @@
+﻿.align-center
+    text-align: center !important
+
+label
+    margin: 0
+    font-size: 14px
+    font-weight: normal
+    font-family: $default-font
+    padding-left: 9px
+
+input[type='text']
+    font-size: 18px
+    font-family: $default-font
+    outline: none
+    border-width: 0 0 2px 0
+    border-color: #CCCCCC
+    line-height: 30px
+    padding-top: 0
+    &.ng-valid
+        border-color: #3EAB0D
+    &.ng-invalid
+        border-color: #921B19
+        color: #921B19
+    &.ng-empty
+        border-color: #CCCCCC
+    &:focus
+        border-color: rgba(0, 103, 185, 0.50)
+
+    &::-webkit-input-placeholder
+        opacity: 0.5
+        text-transform: none
+
+    &::placeholder
+        opacity: 0.5
+
+    &::-moz-placeholder
+        opacity: 0.5
+
+    &:-ms-input-placeholder
+        opacity: 0.5
+
+    &:-moz-placeholder
+        opacity: 0.5
+
+
+select
+    font-size: 18px
+    color: #4a4a4a
+    font-family: $default-font
+    outline: none
+    border-width: 0 0 2px 0
+    border-color: #CCCCCC
+    line-height: 30px
+    width: 100%
+    padding-top: 0
+    &.ng-valid
+        border-color: #3EAB0D
+        color: #3EAB0D
+    &.ng-invalid
+        border-color: #921B19
+    &.ng-empty
+        border-color: #CCCCCC
