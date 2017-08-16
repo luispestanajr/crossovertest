@@ -3,10 +3,10 @@
 
     angular
         .module('crossovervideoplayer')
-        .controller('MainPageController', MainPageController);
+        .controller('VideosPageController', VideosPageController);
 
     /* @ngInject */
-    function MainPageController($state) {
+    function VideosPageController($state) {
         var $ctrl = this;
     }
 })();

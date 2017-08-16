@@ -29,6 +29,7 @@
 
                     $ctrl.errorMessage = null;
                     AuthenticationService.saveToken(res.sessionId);
+                    $state.go('videos');
                 })
                 .catch((ex) => {
                     $ctrl.errorMessage = ex.data.error;

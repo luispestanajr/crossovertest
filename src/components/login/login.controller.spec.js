@@ -97,7 +97,6 @@
             expect(AuthenticationService.getToken()).toBeUndefined();
         });
 
-
         it('doLogin method should be working - valid form (exception handling)', () => {
             let loginForm = {
                 $valid: true

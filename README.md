@@ -1,6 +1,6 @@
-# Projeto Cotação de Seguro Auto - Genial Seguros
+# Crossover Test - Video Player
 
-## Início
+## Begin
 
 Antes de tudo vocês precisam instalar o [Node JS](https://nodejs.org/en/). O primeiro [vocês precisam entrar no site](https://nodejs.org/en/) e baixar a última versão e instalar. Para usuários Linux e Mac o procedimento é mais fácil usando apt-get ou Brew.
 
@@ -29,16 +29,3 @@ gulp build
 ```
 
 Ele vai gerar uma pasta chamada **dist/** que deve ser zipada e enviada para o responsável fazer o deploy.
-
-## Web.config
-
-Prestem atenção nesse arquivo pois é necessários para o IIS rodar corretamente o Angular e suas rotas SPA:
-
-```
-<system.web>
-    <compilation debug="true" targetFramework="4.5.2"/>
-    <httpRuntime targetFramework="4.5.2"/>
-</system.web>
-```
-
-Esse targetFramework é fixo, porém, fiquem atentos caso mudem a versão, pois terão que alterar aqui também.

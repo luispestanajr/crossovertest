@@ -5,12 +5,13 @@
         .module('crossovervideoplayer')
         .controller('HeaderComponentController', HeaderComponentController);
 
-    function HeaderComponentController($state, $attrs) {
+    function HeaderComponentController($state, AuthenticationService) {
         var $ctrl = this;
-        $ctrl.$onInit = _onInit;
-
-        function _onInit() {
-            // TODO
-        }
+        $ctrl.logOut = () => {
+            AuthenticationService.doLogout()
+                .then(() => {
+                    $state.go('main');
+                });
+        };
     }
 })();

@@ -3,12 +3,8 @@
 
     angular
         .module('crossovervideoplayer')
-        .component('wzHeader', {
+        .component('crossHeader', {
             templateUrl: 'components/header/header.template.html',
-            bindings: {
-                logoUri: '@',
-                title: '@'
-            },
             controller: 'HeaderComponentController',
             controllerAs: '$ctrl'
         });
