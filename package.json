@@ -15,6 +15,7 @@
     "angular-animate": "^1.6.4",
     "angular-carousel": "^1.0.2",
     "angular-cookies": "^1.6.4",
+    "angular-jk-rating-stars": "^1.0.8",
     "angular-md5": "^0.1.10",
     "angular-mocks": "^1.6.4",
     "angular-sanitize": "^1.6.4",

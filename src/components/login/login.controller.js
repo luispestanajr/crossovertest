@@ -7,6 +7,10 @@
 
     function LoginComponentController($state, AuthenticationService, md5) {
         var $ctrl = this;
+        $ctrl.loginForm = {
+            username: 'ali',
+            password: 'password'
+        };
 
         $ctrl.doLogin = (loginForm) => {
             if (loginForm.$valid === false) {

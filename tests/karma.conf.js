@@ -43,6 +43,7 @@ module.exports = (config) => {
             'node_modules/phantomjs-polyfill-array-from/array-from-polyfill.js',
             'node_modules/materialize-css/dist/js/materialize.min.js',
             'node_modules/angular-md5/angular-md5.min.js',
+            'node_modules/angular-jk-rating-stars/dist/jk-rating-stars.min.js',
             'src/app/app.module.js',
             'src/app/app.module.spec.js',
             'src/**/*.js'

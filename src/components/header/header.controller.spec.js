@@ -11,7 +11,7 @@
             controller = $controller;
             AuthenticationService = $injector.get('AuthenticationService');
             HeaderComponentController = $controller('HeaderComponentController', { $ctrl: $controller, $attrs: {} });
-            spyOn(HeaderComponentController, 'logOut').and.callThrough();
+            spyOn(HeaderComponentController, 'doLogout').and.callThrough();
             spyOn(AuthenticationService, 'doLogout').and.callThrough();
         }));
 
@@ -19,13 +19,13 @@
             expect(HeaderComponentController).toBeDefined();
         });
 
-        it('logOut method should be defined', () => {
-            expect(HeaderComponentController.logOut).toBeDefined();
+        it('doLogout method should be defined', () => {
+            expect(HeaderComponentController.doLogout).toBeDefined();
         });
 
-        it('logOut method should be working', () => {
-            HeaderComponentController.logOut();
-            expect(HeaderComponentController.logOut).toHaveBeenCalled();
+        it('doLogout method should be working', () => {
+            HeaderComponentController.doLogout();
+            expect(HeaderComponentController.doLogout).toHaveBeenCalled();
             expect(AuthenticationService.doLogout).toHaveBeenCalled();
         });
     });

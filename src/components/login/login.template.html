@@ -1,7 +1,7 @@
 <section>
     <div class="row">
         <div class="section"></div>
-        <form class="col s12 l4 formLogin" name="loginForm" ng-submit="$ctrl.doLogin(loginForm)" novalidate>
+        <form class="col s12 l6 formLogin" name="loginForm" ng-submit="$ctrl.doLogin(loginForm)" novalidate>
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Login to watch our amazing videos</span>
@@ -16,6 +16,7 @@
                             <i class="material-icons prefix">account_circle</i>
                             <input id="username"
                                 ng-model="$ctrl.loginForm.username"
+                                ng-value="$ctrl.loginForm.username"
                                 type="text"
                                 class="validate"
                                 required />
@@ -27,6 +28,7 @@
                             <i class="material-icons prefix">lock_outline</i>
                             <input id="password"
                                 ng-model="$ctrl.loginForm.password"
+                                ng-value="$ctrl.loginForm.password"
                                 type="password"
                                 class="validate"
                                 required />

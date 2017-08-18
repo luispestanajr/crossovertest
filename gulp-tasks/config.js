@@ -39,6 +39,7 @@
                 allVendorsCss: [
                     './node_modules/materialize-css/dist/css/materialize.min.css',
                     './node_modules/toastr/build/toastr.min.css',
+                    './node_modules/angular-jk-rating-stars/dist/jk-rating-stars.min.css'
                 ],
                 allImages: root.assets + '/imgs/**/*',
                 allSass: [
@@ -65,7 +66,8 @@
                 'node_modules/@uirouter/angularjs/release/ui-router-angularjs.js',
                 'node_modules/spin.js/spin.js',
                 'node_modules/materialize-css/dist/js/materialize.min.js',
-                'node_modules/angular-md5/angular-md5.min.js'
+                'node_modules/angular-md5/angular-md5.min.js',
+                'node_modules/angular-jk-rating-stars/dist/jk-rating-stars.min.js'
             ],
             allScripts: [
                 'src/app/app.module.js',

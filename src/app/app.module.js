@@ -9,6 +9,8 @@
             'ui.router',
             'angular-carousel',
             'angularSpinner',
-            'angular-md5'
+            'angular-md5',
+            'ngCookies',
+            'jkAngularRatingStars'
         ]);
 }());

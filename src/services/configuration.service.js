@@ -13,10 +13,5 @@
         this.videosURI = `${baseUrl}/videos`;
         this.videoURI = `${baseUrl}/video`;
         this.rateVideoURI = `${baseUrl}/video/rating`;
-        this.sessionID = undefined;
-
-        this.saveToken = sessionID => this.sessionID = sessionID;
-        this.getToken = () => this.sessionID;
-        this.clearToken = () => this.sessionID = undefined;
     }
 })();
