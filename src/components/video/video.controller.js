@@ -5,12 +5,14 @@
         .module('crossovervideoplayer')
         .controller('VideoComponentController', VideoComponentController);
 
-    function VideoComponentController($state, AuthenticationService) {
+    function VideoComponentController($state, AuthenticationService, $window) {
         var $ctrl = this;
-        $ctrl.rating = 0;
 
-        $ctrl.$onInit = () => {
-            $ctrl.rating = Math.floor($ctrl.video.ratings.reduce((prev, curr) => prev + curr) / $ctrl.video.ratings.length);
+        $ctrl.playVideo = () => {
+            $ctrl.isVideoPlaying = true;
+            $ctrl.playingVideo = $ctrl.video;
+            $ctrl.hadRated = false;
+            $window.scrollTo(0, 0);
         };
     }
 })();

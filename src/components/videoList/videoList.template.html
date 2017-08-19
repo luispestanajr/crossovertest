@@ -1,6 +1,28 @@
 <div class="row">
-    <div class="col s12">
-        Aqui exibimos o video player ao clicar no video
+    <div class="col s12 m12 l12 xl8 playingVideo animate-if" ng-if="$ctrl.isVideoPlaying">
+        <h5>{{$ctrl.playingVideo.name}}</h5>
+        <video width="100%" controls autoplay src="assets/{{$ctrl.playingVideo.url | trustUrl}}" >
+            Your browser does not support the video tag.
+        </video>
+
+        <jk-rating-stars ng-init="$ctrl.hadRated = false"
+                         max-rating="5"
+                         on-rating="$ctrl.onRating(rating)"
+                         read-only="$ctrl.hadRated">
+        </jk-rating-stars>
+        <p>{{$ctrl.playingVideo.description}}</p>
     </div>
-    <cross-video ng-repeat="video in $ctrl.videos" video="video"></cross-video>
+    <div class="col s12 xl12 videoListings animate"
+         ng-class="{ 'xl4': $ctrl.isVideoPlaying, 'l12 xl12': !$ctrl.isVideoPlaying }"
+         infinite-scroll="$ctrl.pagings()"
+         infinite-scroll-distance="0"
+         infinite-scroll-disabled="$ctrl.loadingMoreVideos">
+        <cross-video ng-init="$ctrl.isVideoPlaying = false"
+                    ng-repeat="video in $ctrl.videos"
+                    video="video"
+                    playing-video="$ctrl.playingVideo"
+                    is-video-playing="$ctrl.isVideoPlaying"
+                    had-rated="$ctrl.hadRated">
+        </cross-video>
+    </div>
 </div>

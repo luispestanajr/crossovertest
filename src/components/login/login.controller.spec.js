@@ -13,6 +13,7 @@
             $rootScope = _$rootScope_;
             AuthenticationService = $injector.get('AuthenticationService');
             LoginComponentController = $controller('LoginComponentController', { $ctrl: $controller, $attrs: {} });
+            spyOn(LoginComponentController, '$onInit').and.callThrough();
             spyOn(LoginComponentController, 'doLogin').and.callThrough();
             spyOn(AuthenticationService, 'getToken').and.callThrough();
             spyOn(AuthenticationService, 'saveToken').and.callThrough();
@@ -20,6 +21,15 @@
 
         it('LoginComponentController should be defined', () => {
             expect(LoginComponentController).toBeDefined();
+        });
+
+        it('$onInit method should be defined', () => {
+            expect(LoginComponentController.$onInit).toBeDefined();
+        });
+
+        it('$onInit method should be working', () => {
+            LoginComponentController.$onInit();
+            expect(LoginComponentController.$onInit).toBeDefined();
         });
 
         it('doLogin method should be defined', () => {

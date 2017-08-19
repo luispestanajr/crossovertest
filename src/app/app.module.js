@@ -11,6 +11,7 @@
             'angularSpinner',
             'angular-md5',
             'ngCookies',
-            'jkAngularRatingStars'
+            'jkAngularRatingStars',
+            'infinite-scroll'
         ]);
 }());

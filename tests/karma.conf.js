@@ -44,6 +44,8 @@ module.exports = (config) => {
             'node_modules/materialize-css/dist/js/materialize.min.js',
             'node_modules/angular-md5/angular-md5.min.js',
             'node_modules/angular-jk-rating-stars/dist/jk-rating-stars.min.js',
+            'node_modules/toastr/build/toastr.min.js',
+            'node_modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js',
             'src/app/app.module.js',
             'src/app/app.module.spec.js',
             'src/**/*.js'

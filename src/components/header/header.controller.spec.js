@@ -5,9 +5,11 @@
         application.initModule();
 
         var HeaderComponentController, createController, stateparams, AuthenticationService,
-            controller, element = angular.element('<div></div>');
+            controller, element = angular.element('<div></div>'), $q, $rootScope;
 
-        beforeEach(inject(($compile, $injector, $controller) => {
+        beforeEach(inject(($compile, $injector, $controller, _$q_, _$rootScope_) => {
+            $q = _$q_;
+            $rootScope = _$rootScope_;
             controller = $controller;
             AuthenticationService = $injector.get('AuthenticationService');
             HeaderComponentController = $controller('HeaderComponentController', { $ctrl: $controller, $attrs: {} });
@@ -26,6 +28,24 @@
         it('doLogout method should be working', () => {
             HeaderComponentController.doLogout();
             expect(HeaderComponentController.doLogout).toHaveBeenCalled();
+            expect(AuthenticationService.doLogout).toHaveBeenCalled();
+        });
+
+
+        it('doLogout method should be working', () => {
+            let deferred = $q.defer();
+            let promise = deferred.promise;
+            let $scope = $rootScope.$new();
+
+            AuthenticationService.doLogout.and.returnValue(deferred.promise);
+            deferred.resolve({
+                status: 'success'
+            });
+
+            HeaderComponentController.doLogout();
+
+            $scope.$apply();
+
             expect(AuthenticationService.doLogout).toHaveBeenCalled();
         });
     });

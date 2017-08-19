@@ -6,7 +6,10 @@
         .component('crossVideo', {
             templateUrl: 'components/video/video.template.html',
             bindings: {
-                video: '='
+                video: '=',
+                isVideoPlaying: '=',
+                playingVideo: '=',
+                hadRated: '='
             },
             controller: 'VideoComponentController',
             controllerAs: '$ctrl'

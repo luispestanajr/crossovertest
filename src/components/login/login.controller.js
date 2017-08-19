@@ -7,9 +7,12 @@
 
     function LoginComponentController($state, AuthenticationService, md5) {
         var $ctrl = this;
-        $ctrl.loginForm = {
-            username: 'ali',
-            password: 'password'
+
+        $ctrl.$onInit = () => {
+            toastr.options = {
+                'positionClass': 'toast-bottom-full-width',
+                'progressBar': true,
+            };
         };
 
         $ctrl.doLogin = (loginForm) => {
@@ -33,7 +36,7 @@
 
                     $ctrl.errorMessage = null;
                     AuthenticationService.saveToken(res.sessionId);
-                    $state.go('videos');
+                    $state.go('videos', {slideDir:'slide-right'});
                 })
                 .catch((ex) => {
                     $ctrl.errorMessage = ex.data.error;

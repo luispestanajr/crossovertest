@@ -13,6 +13,6 @@
 
         this.getVideos = ({ sessionId, skip, limit }) => HttpService.get(this.videosURI, {sessionId, skip, limit});
         this.getVideo = ({ sessionId, videoId }) => HttpService.get(this.videoURI, { sessionId, videoId });
-        this.rateVideo = ({ videoId, rating }) => HttpService.post(this.rateVideoURI, { videoId, rating });
+        this.rateVideo = ({ sessionId, videoId, rating }) => HttpService.post(`${this.rateVideoURI}?sessionId=${sessionId}`, { videoId, rating });
     }
 })();

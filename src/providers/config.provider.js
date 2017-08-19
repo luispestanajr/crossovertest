@@ -18,30 +18,6 @@
                 homologInterno: '//gtw-hmg-interno.celulardireto.com.br:8090',
                 prod: 'https://gtw-insurance.wooza.com.br'
             },
-            DOMINIO_ESB = {
-                dev: '//localhost:52220',
-                homolog: '//esb.webapihmg.cd.com',
-                homologInterno: '//gtw-hmg-interno.celulardireto.com.br:8090',
-                prod: 'https://gtw-insurance.wooza.com.br'
-            },
-            SEGURANCA = {
-                dev: {
-                    login: 'leadsLandingPage',
-                    senha: '123'
-                },
-                homolog: {
-                    login: 'leadsLandingPage',
-                    senha: '123'
-                },
-                homologInterno: {
-                    login: 'leadsLandingPage',
-                    senha: '123'
-                },
-                prod: {
-                    login: 'leadsLandingPage',
-                    senha: 'YC2c3KFAzOXPi7sXoiM'
-                }
-            },
             ENV = setAmbiente(host);
 
         // metodos publicos
@@ -60,8 +36,6 @@
         function getDados() {
             return Object.freeze({
                 baseUrl: DOMINIO[ENV],
-                baseUrlESB: DOMINIO_ESB[ENV],
-                dadosSeguranca: SEGURANCA[ENV]
             });
         }
 

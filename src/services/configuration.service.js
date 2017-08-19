@@ -12,6 +12,6 @@
         this.logoutURI = `${baseUrl}/user/logout`;
         this.videosURI = `${baseUrl}/videos`;
         this.videoURI = `${baseUrl}/video`;
-        this.rateVideoURI = `${baseUrl}/video/rating`;
+        this.rateVideoURI = `${baseUrl}/video/ratings`;
     }
 })();

@@ -11,16 +11,16 @@ helpers.isAuthenticated = function(req, res, next){
 		res.send({status:'error',error:'Not Authorized.'});
 	}
 	else{
-		var user = Users.getBySessionId(req.query.sessionId);	
+		var user = Users.getBySessionId(req.query.sessionId);
 		user.then(function(dbuser){
 			if(dbuser){
 				next();
 			}else{
 				res.status(401);
-				res.send({status:'error',error:'Not Authorized.'});		
-			}	
+				res.send({status:'error',error:'Not Authorized.'});
+			}
 		});
-		
+
 	}
 }
 
@@ -33,19 +33,19 @@ helpers.populateDb = function(){
 		}
 		else{
 			console.log('Populating users table.');
-			Users.seed();	
+			Users.seed();
 		}
 	});
 
 	var promise2 = Videos.get();
 	promise2.then(function(data){
-		
+
 		if(data.length){
 			console.log('videos table already populated.');
 		}
 		else{
 			console.log('Populating videos table.');
-			Videos.seed();	
+			Videos.seed();
 		}
 	});
 }

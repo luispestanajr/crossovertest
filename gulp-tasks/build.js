@@ -13,7 +13,7 @@ gulp.task('build:dev', (done) => {
         'styles:vendors',
         'scripts',
         'scripts:vendors',
-        ['fonts', 'images', 'html', 'modal'],
+        ['fonts', 'images', 'videos', 'html', 'modal'],
         done
     );
 });
@@ -28,7 +28,7 @@ gulp.task('build:prod', (done) => {
         'styles:vendors',
         'scripts',
         'scripts:vendors',
-        ['fonts', 'images', 'html', 'modal'],
+        ['fonts', 'images', 'videos', 'html', 'modal'],
         'test:build',
         done
     );

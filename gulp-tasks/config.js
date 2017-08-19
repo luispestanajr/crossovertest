@@ -24,7 +24,8 @@
             fonts: root.dist + '/assets/fonts/',
             images: root.dist + '/assets/imgs/',
             js: root.dist + '/assets/js/',
-            modal: root.dist + '/interno/'
+            modal: root.dist + '/interno/',
+            videos: root.dist + '/assets/videos/'
         },
         src: {
             assets: {
@@ -47,7 +48,8 @@
                 ],
                 styleSass: root.src + '/styles/styles.sass',
                 css: root.assets + '/css',
-                root: root.assets
+                root: root.assets,
+                videos: root.assets + '/videos/*.mp4'
             },
             allHtmls: root.src + '/**/*.html',
             allVendors: [
@@ -67,7 +69,9 @@
                 'node_modules/spin.js/spin.js',
                 'node_modules/materialize-css/dist/js/materialize.min.js',
                 'node_modules/angular-md5/angular-md5.min.js',
-                'node_modules/angular-jk-rating-stars/dist/jk-rating-stars.min.js'
+                'node_modules/angular-jk-rating-stars/dist/jk-rating-stars.min.js',
+                'node_modules/toastr/build/toastr.min.js',
+                'node_modules/ng-infinite-scroll/build/ng-infinite-scroll.min.js'
             ],
             allScripts: [
                 'src/app/app.module.js',
@@ -86,6 +90,7 @@
             images: root.tmp + '/assets/imgs/',
             js: root.tmp + '/assets/js/',
             modal: root.tmp + '/interno/',
+            videos: root.tmp + '/assets/videos/'
         }
     };
 }());
